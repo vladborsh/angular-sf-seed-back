@@ -1,0 +1,14 @@
+<apex:component >
+
+	<script type="text/ng-template" id="Banana.html">
+		<c:Banana /> 
+	</script>
+	<script type="text/ng-template" id="Opportunity.html">
+		<c:Opportunity /> 
+	</script>
+	<script type="text/ng-template" id="OpportunityDetails.html">
+		<c:OpportunityDetails /> 
+	</script>
+
+
+</apex:component>

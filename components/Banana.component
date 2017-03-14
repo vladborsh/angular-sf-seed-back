@@ -1,0 +1,14 @@
+<apex:component >
+	<div class="row">
+	<div class="col-md-12">
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<!-- Some header -->
+			</div>
+			<div class="panel-body">
+			<!-- Page body -->
+			</div>
+		</div>
+	</div>
+</div>
+</apex:component>

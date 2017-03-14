@@ -1,0 +1,5 @@
+node_modules
+b_components
+build
+*.log
+*.zip
