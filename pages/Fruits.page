@@ -1,13 +1,13 @@
 <apex:page showHeader="false" sidebar="false" controller="FruitsCtrl">
 <html lang="en">
 
-	<head>
+  <head>
 
-		<meta charset="UTF-8"/> 
-		<title>Fruits</title>
+    <meta charset="UTF-8"/> 
+    <title>Fruits</title>
 
-		<apex:stylesheet value="{!URLFOR($Resource.vendor_includes, 'bootstrap/dist/css/bootstrap.min.css')}"/>
-		<apex:stylesheet value="https://localhost:8000/css/custom.css"/>
+    <apex:stylesheet value="{!URLFOR($Resource.vendor_includes, 'bootstrap/dist/css/bootstrap.min.css')}"/>
+    <apex:stylesheet value="https://localhost:8000/css/custom.css"/>
 
     <script type="text/javascript">
       var portalSettings        =  {!portalSettings};
@@ -16,40 +16,40 @@
       var mainFruitIsApple      =  {!mainFruitIsApple};
     </script>
 
-		<!-- Vendor scripts -->
-		<apex:includeScript value="{!URLFOR($Resource.vendor_includes, 'jquery/dist/jquery.min.js')}"/>
-		<apex:includeScript value="{!URLFOR($Resource.vendor_includes, 'bootstrap/dist/js/bootstrap.min.js')}"/>
-		<apex:includeScript value="{!URLFOR($Resource.vendor_includes, 'angular/angular.min.js')}"/>
-		<apex:includeScript value="{!URLFOR($Resource.vendor_includes, 'angular-animate/angular-animate.min.js')}"/>
-		<apex:includeScript value="{!URLFOR($Resource.vendor_includes, 'angular-bootstrap/ui-bootstrap.min.js')}"/>
-		<apex:includeScript value="{!URLFOR($Resource.vendor_includes, 'angular-ui-router/release/angular-ui-router.min.js')}"/>
-		<apex:includeScript value="{!URLFOR($Resource.vendor_includes, 'lodash/dist/lodash.min.js')}"/>
-		<!-- Client scripts -->
-		<apex:includeScript value="https://localhost:8000/app.js"/>
-		<apex:includeScript value="https://localhost:8000/app.config.js"/>
-		<apex:includeScript value="https://localhost:8000/general/sf-remote.srv.js"/>
+    <!-- Vendor scripts -->
+    <apex:includeScript value="{!URLFOR($Resource.vendor_includes, 'jquery/dist/jquery.min.js')}"/>
+    <apex:includeScript value="{!URLFOR($Resource.vendor_includes, 'bootstrap/dist/js/bootstrap.min.js')}"/>
+    <apex:includeScript value="{!URLFOR($Resource.vendor_includes, 'angular/angular.min.js')}"/>
+    <apex:includeScript value="{!URLFOR($Resource.vendor_includes, 'angular-animate/angular-animate.min.js')}"/>
+    <apex:includeScript value="{!URLFOR($Resource.vendor_includes, 'angular-bootstrap/ui-bootstrap.min.js')}"/>
+    <apex:includeScript value="{!URLFOR($Resource.vendor_includes, 'angular-ui-router/release/angular-ui-router.min.js')}"/>
+    <apex:includeScript value="{!URLFOR($Resource.vendor_includes, 'lodash/dist/lodash.min.js')}"/>
+    <!-- Client scripts -->
+    <apex:includeScript value="https://localhost:8000/app.js"/>
+    <apex:includeScript value="https://localhost:8000/app.config.js"/>
+    <apex:includeScript value="https://localhost:8000/general/sf-remote.srv.js"/>
     <apex:includeScript value="https://localhost:8000/general/general.fct.js"/>
-		<!-- Banana page -->
-		<apex:includeScript value="https://localhost:8000/banana/banana.fct.js"/>
-		<apex:includeScript value="https://localhost:8000/banana/banana.srv.js"/>
-		<apex:includeScript value="https://localhost:8000/banana/banana.ctrl.js"/>
-		<!-- Opportunity page -->
-		<apex:includeScript value="https://localhost:8000/opportunity/opportunity.fct.js"/>
-		<apex:includeScript value="https://localhost:8000/opportunity/opportunity.srv.js"/>
-		<apex:includeScript value="https://localhost:8000/opportunity/opportunity.ctrl.js"/>
+    <!-- Banana page -->
+    <apex:includeScript value="https://localhost:8000/banana/banana.fct.js"/>
+    <apex:includeScript value="https://localhost:8000/banana/banana.srv.js"/>
+    <apex:includeScript value="https://localhost:8000/banana/banana.ctrl.js"/>
+    <!-- Opportunity page -->
+    <apex:includeScript value="https://localhost:8000/opportunity/opportunity.fct.js"/>
+    <apex:includeScript value="https://localhost:8000/opportunity/opportunity.srv.js"/>
+    <apex:includeScript value="https://localhost:8000/opportunity/opportunity.ctrl.js"/>
 
-	</head>
+  </head>
 
-	<body ng-app="App">
-		<!-- Templates storage -->
-		<c:Templates /> 
+  <body ng-app="App">
+    <!-- Templates storage -->
+    <c:Templates /> 
 
-		<div class="container-fluid">
-			<!-- Main router view-->
-			<div class="animate-opacity" ui-view="main"></div>
-		</div>
+    <div class="container-fluid">
+      <!-- Main router view-->
+      <div class="animate-opacity" ui-view="main"></div>
+    </div>
 
-	</body>
-	
+  </body>
+  
 </html>
 </apex:page>
