@@ -5,7 +5,7 @@ public class OpportunityService {
     Map<String,Object> result = new Map<String,Object>();
     String ownerId = (String)arg.get('ownerId');
     try {
-      /* Do somthing useful */
+      /* Do something usefull */
     } catch (Exception e) {
       result = new Map<String,Object> {
         'type' => 'error',
